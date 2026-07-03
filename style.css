@@ -395,6 +395,16 @@ footer p {
 .head_right_part a:hover span {
     transform: translateY(-5px);
 }
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 @media (max-width: 900px) {
     header {
         gap: 20px;
