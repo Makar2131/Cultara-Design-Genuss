@@ -1,0 +1,531 @@
+html {
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #EDE6DA ;
+    display: flex;
+    flex-direction: row;
+    gap: 600px;
+}
+.left_part_image {
+    height: 50%;
+}
+.head_left_part {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+    gap: 20px;
+}
+.head_right_part {
+    display: flex;
+    gap: 60px;
+    padding-top: 33px;
+}
+.head_right_part a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: #2B2724;
+}
+.head_right_part a span {
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+.left_part_text h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #2B2724;
+}
+.left_part_text p {
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    color: #8C4A2F;
+}
+.hero {
+    background-color: #B5651D;
+    min-height: 90vh;
+}
+.main_hero_part {
+    display: flex;
+    flex-direction: row;
+    gap: 300px;
+}
+.left_hero_part {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-top: 150px;
+}
+.left_hero_part h1 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 4rem;
+    font-weight: 500;
+    color: #EDE6DA;
+    padding-bottom: 20px;
+}
+.left_hero_part p {
+    font-family: sans-serif;
+    font-size: 28px;
+    line-height: 1.5;
+    color: #EDE6DA;
+    opacity: 0.9;
+    max-width: 28ch;
+    margin: 0 0 1.5rem 0;
+    padding-bottom: 100px;
+}
+.left_hero_part a {
+    text-decoration: none;
+    color: #EDE6DA;
+    border: 1rem;
+    background: rgba(140, 74, 47, 0.5);
+    text-align: center;
+    border-radius: 1rem;
+    padding: 10px 10px;
+    margin-right: 40px;
+}
+.right_hero_part img {
+    height: 65vh;
+    border-radius: 10px;
+}
+.right_hero_part {
+    padding: 80px 50px 50px 0;
+}
+
+.idee {
+    min-height: 50vh;
+    background: #EDE6DA;
+}
+.main_idee {
+    display: flex;
+    flex-direction: column;
+    gap: 130px;
+    align-items: center;
+    padding: 40px 0;
+}
+.line_idee {
+    width: 90%;
+    height: 1.5px;
+    background-color: #B5651D;
+
+}
+.main_idee p {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-style: italic;
+    font-size: 1.7rem;
+    line-height: 1.6;
+    max-width: 690px;
+    color: #2B2724;
+}
+.menu {
+    min-height: 90vh;
+    background-color: #2B2724;
+}
+.main_menu {
+    display: flex;
+    flex-direction:column;
+    padding: 40px 50px;
+}
+.first_p {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #EDE6DA;
+    margin-bottom: 8px;
+}
+.second_p {
+    font-size: 1rem;
+    color: #B5651D;
+}
+.menu_cards_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 50vh;
+    margin-top: 2rem;
+}
+.menu_kaffee,
+.menu_geback,
+.menu_tarte,
+.menu_wein {
+    display: flex;
+    flex-direction:column ;
+    border: 1px solid;
+    border-radius: 4%;
+    border-color: #8C4A2F;
+    width: 300px;
+    align-items: center;
+    padding: 30px 20px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.5rem;
+    gap: 40px;
+}
+.menu_kaffee p,
+.menu_geback p,
+.menu_tarte p,
+.menu_wein p {
+    font-weight: 500;
+    color: #EDE6DA;
+}
+.menu_line {
+    width: 80%;
+    height: 1.5px;
+    background-color: gray;
+}
+.laden {
+    min-height: 90vh;
+    background-color: #EDE6DA;
+}
+.laden_main {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px 5px 30px;
+}
+.first_p_laden {
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #2B2724;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+.second_p_laden {
+    color: #8C4A2F;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+.grid_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.laden_cards {
+    min-height: 15rem;
+    border: 1px solid #B5651D;
+    background: #FAF7F0;
+    border-radius: 15px;
+    padding: 25px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon_laden {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    background:#B5651D;
+    border-radius: 10px;
+}
+.laden_cards h3 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    width: 180px;
+    text-align: center;
+    margin: 0 auto;
+    color: #2B2724;
+}
+.events {
+    min-height: 70vh;
+    background: #4A8B8B;
+}
+.main_events {  
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px 10px 30px;
+}
+.first_p_events {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #EDE6DA;
+}
+.second_p_events {
+    font-size: 1rem;
+    color: #EDE6DA;
+    opacity: 0,85;
+}
+.events-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-width: 50rem;
+}
+
+.event {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid rgba(237, 230, 218, 0.2);
+}
+
+.event:last-child {
+    border-bottom: none;
+}
+
+.event-date {
+    flex-shrink: 0;
+    width: 4rem;
+    height: 4rem;
+    background: #EDE6DA;
+    border-radius: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.event-day {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #2B2724;
+}
+
+.event-month {
+    font-size: 0.65rem;
+    color: #2B2724;
+}
+
+.event-info h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #EDE6DA;
+    margin: 0 0 0.25rem 0;
+}
+
+.event-info p {
+    font-size: 0.85rem;
+    color: #EDE6DA;
+    opacity: 0.75;
+    margin: 0;
+}
+.kontakt {
+    min-height: 70vh;
+    background: #EDE6DA;
+}
+.main_kontakt {
+    display: flex;
+    flex-direction: row;
+    padding: 50px 50px 20px 50px;
+    gap: 100px;
+}
+.kontakt_image {
+    height: 50vh;
+    border-radius: 10px;
+}
+.right_kontakt_part a {
+    text-decoration: underline;
+    font-size: 1.5rem;
+}
+.time_kontakt {
+    color: #B5651D;
+    font-size: 1.5rem;
+}
+.mail_kontakt a {
+    color: #8C4A2F;
+}
+.telefon_kontakt a,
+.adress_kontakt a {
+    color: #2B2724;
+}
+.main_text_kontakt {
+    font-size: 1.75rem;
+    color: #2B2724;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-weight: 500;
+}
+.right_kontakt_part {
+    line-height: 2.5rem;
+}
+footer {
+    display: flex;
+    min-height: 10vh;
+    justify-content: center;
+    padding: 20px 0;
+    background: #2B2724;
+    color: #EDE6DA;
+}
+footer p {
+    opacity: 0.6;
+}
+.right_hero_part img,
+.kontakt_image {
+  box-shadow: 0 8px 24px rgba(43, 39, 36, 0.25);
+}
+.laden_cards {
+  box-shadow: 0 2px 8px rgba(140, 74, 47, 0.12);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.laden_cards:hover {
+  box-shadow: 0 6px 16px rgba(140, 74, 47, 0.2);
+  transform: translateY(-5px);
+}
+.menu_kaffee,
+.menu_geback,
+.menu_tarte,
+.menu_wein {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+.left_hero_part a {
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.left_hero_part a:hover {
+    box-shadow: 0 6px 16px rgba(140, 74, 47, 0.2);
+    transform: translateY(-5px);
+}
+.head_right_part a {
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.head_right_part a:hover span {
+    transform: translateY(-5px);
+}
+@media (max-width: 900px) {
+    header {
+        gap: 20px;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+    .head_right_part {
+        gap: 20px;
+    }
+
+    .main_hero_part {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .left_hero_part {
+        padding: 60px 30px 0 30px;
+    }
+    .left_hero_part h1 {
+        font-size: 2.8rem;
+    }
+    .left_hero_part p {
+        font-size: 1.3rem;
+        padding-bottom: 40px;
+    }
+    .right_hero_part {
+        padding: 0 30px 50px 30px;
+    }
+    .right_hero_part img {
+        width: 100%;
+        height: auto;
+    }
+
+    .menu_cards_container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .menu_kaffee, .menu_geback, .menu_tarte, .menu_wein {
+        width: 45%;
+        min-width: 220px;
+    }
+
+    .grid_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .main_kontakt {
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px;
+    }
+    .kontakt_image {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* ===== Смартфоны ===== */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 20px;
+        gap: 10px;
+    }
+    .head_left_part {
+        padding-left: 0;
+    }
+    .head_right_part {
+        flex-wrap: wrap;
+        gap: 15px;
+        padding-top: 0;
+        padding-bottom: 10px;
+        justify-content: center;
+    }
+
+    .left_hero_part {
+        padding: 40px 20px 0 20px;
+    }
+    .left_hero_part h1 {
+        font-size: 2.2rem;
+    }
+    .left_hero_part p {
+        font-size: 1.1rem;
+        max-width: none;
+    }
+    .left_hero_part a {
+        display: inline-block;
+        margin-right: 0;
+    }
+
+    .main_idee p {
+        font-size: 1.2rem;
+        padding: 0 20px;
+    }
+    .main_idee {
+        gap: 60px;
+    }
+
+    .main_menu {
+        padding: 30px 20px;
+    }
+    .menu_kaffee, .menu_geback, .menu_tarte, .menu_wein {
+        width: 100%;
+    }
+
+    .laden_main {
+        padding: 20px;
+    }
+    .grid_container {
+        grid-template-columns: 1fr;
+    }
+
+    .main_events {
+        padding: 20px;
+    }
+    .event {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .main_kontakt {
+        padding: 20px;
+    }
+    .right_kontakt_part {
+        line-height: 1.8rem;
+    }
+    .main_text_kontakt {
+        font-size: 1.4rem;
+    }
+    .time_kontakt {
+        font-size: 1.1rem;
+    }
+}
